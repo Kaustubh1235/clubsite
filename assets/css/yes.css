@@ -1,0 +1,39 @@
+
+.centered-input-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 200px); 
+  }
+  
+  .centered-input-box input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  
+  #footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  #searchButton {
+    background-color: #4CAF50; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px;
+    cursor: pointer; 
+    transition: background-color 0.3s;
+  
+   
+    border-radius: 5px;
+  }
+  
+  #searchButton:hover {
+    background-color: #45a049;
+  }
+  

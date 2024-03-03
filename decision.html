@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decision</title>
+    <link rel="stylesheet" href="/assets/css/decision.css">
+</head>
+<body>
+    <div class="cd-switch">
+        <h2>Crop already present in the field ?</h2>
+        <div class="switch">
+            <input type="radio" id="yes" name="choice">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="choice">
+            <label for="no">No</label>
+          <span class="switchFilter"></span>
+        </div>
+      </div> 
+      <script>
+        document.getElementById('yes').addEventListener('change', function() {
+            if (this.checked) {
+                window.location.href = 'yes.html';
+            }
+            });
+
+      </script>
+</body>
+</html>

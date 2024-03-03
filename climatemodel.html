@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Caterpillar</title>
+
+  
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="/assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="/file/assets/css/style.css">
+
+  <style>
+    .bell-icon {
+      font-size: 36px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(3, 93, 3);
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      color: white;
+    }
+</style>
+</head>
+
+<body>
+    <header id="header" class="fixed-top header-transparent">
+        <div class="container d-flex align-items-center justify-content-between position-relative">
+          <div class="logo">
+            <a href="/index.html"><img src="/assets/img/grass.png" alt="" class="img-fluid"></a>
+          </div>
+          <nav id="navbar" class="navbar">
+            <ul>
+              <li><a class="nav-link scrollto" href="index.html"></a></li>
+            </ul>
+            <div class="bell-icon">
+                <i class='bx bx-cloud-lightning' ></i>
+            </div>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav>
+        </div>
+      </header>
+
+  <div class="main-content" style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; background-color:rgb(196, 200, 200)">
+    <section id="featured-services" class="featured-services section-bg" style="max-width: 800px; text-align: center;">
+        <style>
+           
+            .back-button {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                background-color: #00d936;
+                color: #fff;
+                border: none;
+                border-radius: 50%;
+                width: 50px;
+                height: 50px;
+                font-size: 24px;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+              }
+            .card{
+                padding: 1.2rem 3rem 1rem 3rem;
+                margin: 1rem;
+                border-radius: 1.5rem;
+                border-color: rgba(238, 237, 237, 0.438);
+                box-shadow: 5px 8px 10px #80808033;
+            }
+            @media(max-width:767px){
+                .card{
+                    height: 10rem;
+                    padding: 1.5rem 1.5rem 1rem 1.5rem;
+                }
+            }
+            .carousel-indicators li {
+                width: 5px;
+                height: 6px;
+                border-radius: 100%;
+                opacity: 0.2;
+                background-color: #000000;
+            }
+            .carousel-indicators{
+                margin-bottom: 0;
+            }
+            .temp{
+                font-size: 5rem;
+                color: rgb(57, 57, 58);
+            }
+            .card-1{
+                background: linear-gradient(to right, #ffffff 50%, rgba(241, 224, 190, 0.507));
+            }
+            @media(max-width:767px)
+            {
+                .temp{
+                    font-size: 3rem;
+                }
+            }
+            .location{
+                margin-bottom: 1.5rem;
+            }
+            @media(max-width:767px)
+            {
+                .location{
+                    font-size: 0.75rem;
+                }
+            }
+            .img-fluid{
+                float: right;
+                width: 65%;
+                display: flex;
+                align-items: center;
+            }
+            .row2 .img-fluid{
+                margin: 10% 0;
+                opacity: 0.5;
+                width: 40%;
+            }
+            .card-2 .row{
+                justify-content: center;
+            }
+            .card-3 .row{
+                justify-content: center;
+            }
+            .row1{
+                font-size: 0.7rem;
+                font-weight: bold;
+                color: black;
+            }
+            .row3{
+                font-size: 0.9rem;
+                font-weight: bold;
+                color: black;
+            }
+            @media(max-width:400px)
+            {
+                .row3{
+                    font-size: 0.7rem;
+                    font-weight: bold;
+                    color: black;
+                }
+            }
+            @media(max-width:320px)
+            {
+                .row3{
+                    font-size: 0.6rem;
+                    font-weight: bold;
+                    color: black;
+                }
+            }
+            .row4{
+                font-size: 0.6rem;
+                color: rgb(196, 196, 196);
+                margin: 5% 0 2.5rem;
+            }
+            .card-3 .row3{
+                margin: 5% 0 2.5rem;
+            }
+            .col{
+                overflow: visible;
+            }
+            .row{
+                overflow: visible;
+            }
+        </style>
+        <div class="container">
+            <div class="card card-1">
+                <div id="demo" class="carousel slide" data-ride="carousel">
+
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                      <li data-target="#demo" data-slide-to="0" class="active"></li>
+                      <li data-target="#demo" data-slide-to="1"></li>
+                      <li data-target="#demo" data-slide-to="2"></li>
+                    </ul>
+                  
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                          <div class="row">
+                            <div class="col-6">
+                              <div class="temp">23&deg;</div> 
+                              <div class="location">Vellore, Tamil Nadu</div>
+                            </div>
+                            <div class="col-6 justify-content-right">
+                              <img class="img-fluid" src="https://img.icons8.com/plasticine/100/000000/sun.png">
+                            </div>
+                          </div>
+                         
+                      </div>
+                    </div>
+                  
+                  </div>
+            </div>
+            <div class="card card-2">
+              <div id="demo" class="carousel slide" data-ride="carousel">
+
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                  <li data-target="#demo" data-slide-to="0"></li>
+                  <li data-target="#demo" data-slide-to="1" class="active"></li>
+                  <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+              
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col">
+                        <div class="row row1">21&deg;</div>
+                        <div class="row row2"><img class="img-fluid" src="https://img.icons8.com/ios/100/000000/sun.png"/></div>
+                        <div class="row row3">12:00</div>
+                        <div class="row row4">PM</div>
+                      </div>
+                      <div class="col">
+                        <div class="row row1">20&deg;</div>
+                        <div class="row row2"><img class="img-fluid" src="https://img.icons8.com/ios/100/000000/sun.png"/></div>
+                        <div class="row row3">1:00</div>
+                        <div class="row row4">PM</div>
+                      </div>
+                      <div class="col">
+                        <div class="row row1">20&deg;</div>
+                        <div class="row row2"><img class="img-fluid" src="https://img.icons8.com/windows/100/000000/cloud.png"/></div>
+                        <div class="row row3">2:00</div>
+                        <div class="row row4">PM</div>
+                      </div>
+                      <div class="col">
+                        <div class="row row1">19&deg;</div>
+                        <div class="row row2"><img class="img-fluid" src="https://img.icons8.com/windows/100/000000/cloud.png"/></div>
+                        <div class="row row3">3:00</div>
+                        <div class="row row4">PM</div>
+                      </div>
+                      <div class="col">
+                        <div class="row row1">18&deg;</div>
+                        <div class="row row2"><img class="img-fluid" src="https://img.icons8.com/cotton/64/000000/rain--v3.png"/></div>
+                        <div class="row row3">4:00</div>
+                        <div class="row row4">PM</div>
+                      </div>
+                    </div>
+                     
+                  </div>
+                </div>
+              
+              </div>
+              
+              
+            </div>
+            <div class="card card-3">
+              <div id="demo" class="carousel slide" data-ride="carousel">
+
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                  <li data-target="#demo" data-slide-to="0"></li>
+                  <li data-target="#demo" data-slide-to="1"></li>
+                  <li data-target="#demo" data-slide-to="2" class="active"></li>
+                </ul>
+              
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col">
+                        <div class="row row1">21&deg;</div>
+                        <div class="row row2"><img class="img-fluid" src="https://img.icons8.com/ios/100/000000/sun.png"/></div>
+                        <div class="row row3">Mon</div>
+                      </div>
+                      <div class="col">
+                        <div class="row row1">20&deg;</div>
+                        <div class="row row2"><img class="img-fluid" src="https://img.icons8.com/ios/100/000000/sun.png"/></div>
+                        <div class="row row3">Tue</div>
+                      </div>
+                      <div class="col">
+                        <div class="row row1">16&deg;</div>
+                        <div class="row row2"><img class="img-fluid" src="https://img.icons8.com/windows/100/000000/cloud.png"/></div>
+                        <div class="row row3">Wed</div>
+                      </div>
+                      <div class="col">
+                        <div class="row row1">17&deg;</div>
+                        <div class="row row2"><img class="img-fluid" src="https://img.icons8.com/windows/100/000000/cloud.png"/></div>
+                        <div class="row row3">Thu</div>
+                      </div>
+                      <div class="col">
+                        <div class="row row1">18&deg;</div>
+                        <div class="row row2"><img class="img-fluid" src="https://img.icons8.com/cotton/64/000000/rain--v3.png"/></div>
+                        <div class="row row3">Fri</div>
+                      </div>
+                    </div>
+                     
+                  </div>
+                </div>
+              
+              </div>
+            </div>
+        </div>
+    </section>
+    <a href="/file/index.html" class="back-button">
+        <i class="bi bi-arrow-left"></i>
+      </a>
+  </div>
+
+   
+   
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Caterpillar</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="https://www.linkedin.com/in/chandan-kumar-438aa3193">Chandan Kumar</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
